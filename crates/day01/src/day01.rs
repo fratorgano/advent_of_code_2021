@@ -40,3 +40,16 @@ fn count_sliding_increases(numbers:&[usize]) -> usize {
   } 
   increases
 }
+
+#[cfg(test)]
+mod tests {
+  use super::{count_increases, count_sliding_increases};
+  #[test]
+  fn test_part1() {
+    assert_eq!(7, count_increases(&[199,200,208,210,200,207,240,269,260,263]));
+  }
+  #[test]
+  fn test_part2() {
+    assert_eq!(5, count_sliding_increases(&[199,200,208,210,200,207,240,269,260,263]));
+  }
+}
