@@ -12,14 +12,7 @@ I'll try my best to get every ⭐ withing 24 hours of the puzzle release.
 
 `cargo test -p day*` - Tests a specific day
 
-`cargo run` - Runs all
-
 `cargo test` - Tests all
-
-
-
-
-
 
 ## 🎅 Have a Wonderful Holiday Season Everyone! 🎅 
 
