@@ -1,11 +1,11 @@
 # 🎄 Advent of Code 2021 🎄
 
-I decided to stick with Rust this year and try to improve a bit on it, I basically haven't used it since last year's AoC so you could say 
-I'm a bit RUSTy with it 🥶.
+I decided to stick with Rust this year and try to improve a bit on it, I basically haven't used it since last year's AoC, so you 
+could say I'm a bit RUSTy with it 🥶.
 
-I'm not gonna shoot for the leaderboard, the goal is getting all the 50 ⭐ while learning and having fun. 
+I'm not going to shoot for the leaderboard, the goal is getting all the 50 ⭐ while learning and having fun.
 
-I'll try my best to get every ⭐ withing 24 hours of the puzzle release.
+Not only that, but I'll try my best to get every ⭐ within 24 hours of the puzzle release.
 
 ## ❄️ How to use ❄️
 `cargo run -p day*` - Runs a specific day
@@ -14,9 +14,15 @@ I'll try my best to get every ⭐ withing 24 hours of the puzzle release.
 
 `cargo test` - Tests all
 
-## 🎅 Have a Wonderful Holiday Season Everyone! 🎅 
+## 🥛 Results 🍪
+| Day | Part 1 Time | Part 1 Rank | Part 1 Runtime[^1] | Part 2 Time | Part 2 Rank | Part 2 Runtime[^1] |
+|:-:|-|-:|-:|-|-:|-:|
+| 1 | 00:13:19 | 5740 |19.5µs| 00:21:33 | 5187 | 20.7µs |
+| 2 | 02:31:32 | 25070 | 88.2µs | 02:35:27 | 23492 | 76.4µs |
+
+## 🎅 Have a Wonderful Holiday Season, Everyone! 🎅 
 
 ![koch flakes](https://raw.githubusercontent.com/fratorgano/advent_of_code_2020/main/snow.gif)
 
 
-
+[^1]: `cargo run -p day* --release`, does not include the reading of the input file but includes parsing.
