@@ -17,8 +17,9 @@ Not only that, but I'll try my best to get every ⭐ within 24 hours of the puzz
 ## 🥛 Results 🍪
 | Day | Part 1 Time | Part 1 Rank | Part 1 Runtime[^1] | Part 2 Time | Part 2 Rank | Part 2 Runtime[^1] |
 |:-:|-|-:|-:|-|-:|-:|
-| 1 | 00:13:19 | 5740 |19.5µs| 00:21:33 | 5187 | 20.7µs |
-| 2 | 02:31:32 | 25070 | 88.2µs | 02:35:27 | 23492 | 76.4µs |
+| 1 | 00:13:19 |  5740 | 19.5µs | 00:21:33 |  5187 |  20.7µs |
+| 2 | 02:31:32 | 25070 | 88.2µs | 02:35:27 | 23492 |  76.4µs |
+| 3 | 02:55:11 | 26333 | 47.2µs | 03:33:14 | 18066 | 345.3µs |
 
 ## 🎅 Have a Wonderful Holiday Season, Everyone! 🎅 
 
