@@ -27,6 +27,7 @@ Not only that, but I'll try my best to get every ⭐ within 24 hours of the puzz
 |  8 | 02:38:27 | 17947 |  89.4µs | 05:38:06 | 14742 | 972.8µs |
 |  9 | 02:58:36 | 17499 | 321.9µs | 06:26:57 | 18828 | 506.1µs |
 | 10 | 03:05:07 | 16485 |  78.9µs | 03:36:15 | 16034 |  99.1µs |
+| 11 | 03:46:34 | 11792 | 246.8µs | 03:51:13 | 11638 | 791.1µs |
 
 ## 🎅 Have a Wonderful Holiday Season, Everyone! 🎅 
 
