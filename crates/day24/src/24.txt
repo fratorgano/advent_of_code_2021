@@ -1,0 +1,77 @@
+This sequence repeats 14 times, once for every digit of input: 
+inp w     <- w gets overwritten with input
+mul x 0   <- x resets every time
+add x z
+mod x 26 
+div z A   <- This changes -> always 1 or 26
+add x B   <- This changes -> if positive, B>=10, if negative, B<=-4
+eql x w
+eql x 0
+mul y 0   <- y resets every time
+add y 25
+mul y x
+add y 1
+mul z y
+mul y 0
+add y w
+add y C   <- This changes
+mul y x
+add z y
+
+w takes the input every iteration so it resets
+x,y gets multiplied by 0 at the start every time so it resets
+only z carries over
+
+Paraphrasing sequence:
+  Input = read input
+  Condition = (input == ((z % 26) + B))  <- **
+  if A is 26, set z = z / 26
+  if !Condition -> z = z * 26 + input + C
+** our input is always between 1 and 9, since B, when positive, is always>=10, this condition is always false for B positive
+
+We only do mod26,/26 or *26 on z, it could be a base-26 value.
+
+====
+if B positive, push(input+C)
+if B negative, if (pop()+B != input) => push(input+C) 
+
+There are 7 negative B values and 7 positive, the stack will be empty(so z=0) if I never push on a pop.
+01234567890123
+93997999296912
+
+   B  |  C 
+  10  |  2   ->  push(input[0]) + 2 x
+  14  | 13   ->  push(input[1]) + 13 x
+  14  | 13   ->  push(input[2]) + 13 x
+ -13  |  9   ->  POP, input[3] == pop() - 13 *
+  10  | 15   ->  push(input[4]) + 15 x
+ -13  |  3   ->  POP, input[5] == pop() - 13 *
+  -7  |  6   ->  POP, input[6] == pop() - 7 *
+  11  |  5   ->  push(input[7]) + 5 x
+  10  | 16   ->  push(input[8]) + 16 x
+  13  |  1   ->  push(input[9]) + 1 x
+  -4  |  6   ->  POP, input[10] == pop() - 4 *
+  -9  |  3   ->  POP, input[11] == pop() - 9 *
+ -13  |  7   ->  POP, input[12] == pop() - 13 *
+  -9  |  9   ->  POP, input[13] == pop() - 9 *
+
+Rules for my input:
+i[3] = i[2]
+i[5] = i[4] + 2
+i[6] = i[1] + 6
+i[10] = i[9] - 3 => i[9] = i[10] + 3
+i[11] = i[8] + 7
+i[12] = i[7] - 8 => i[7] = i[12] + 8
+i[13] = i[0] - 7 => i[0] = i[13] + 7
+
+A = B + x => solve setting A = 9
+Finding max:
+01234567890123
+93997999296912
+
+A = B + x => solve setting A = 1
+Finding min:
+01234567890123
+81111379141811
+
+

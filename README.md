@@ -40,6 +40,7 @@ Not only that, but I'll try my best to get every ⭐ within 24 hours of the puzz
 | 21 | 03:35:39 |  8620 |   6.2µs | 04:23:48 |  4697 |  12.4ms |
 | 22 | 03:31:10 |  6787 | 174.4ms | 04:11:45 |  2500 |  19.5ms |
 | 23 | 02:53:05 |  2630 | 650.3ms | 06:52:28 |  2545 | 570.3ms |
+| 24 | 05:34:14 |  2117 |    1.1s[^2] | 05:43:03 |  2059 |   13.5s[^2] |
 
 ## 🎅 Have a Wonderful Holiday Season, Everyone! 🎅 
 
@@ -47,3 +48,4 @@ Not only that, but I'll try my best to get every ⭐ within 24 hours of the puzz
 
 
 [^1]: `cargo run -p day* --release`, does not include the reading of the input file but includes parsing.
+[^2]: This was solved on paper, the code isn't well written or optimized.
